@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  margin: 0 !important;
+  background-color: #ffffff;
+}
+
+.width-95 {
+  width: 95%;
+
+}
+
+.slider {
+  margin: 0 20px;
+  overflow: "hidden";
+  padding: 2rem 0;
+}
+
+.slider img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.react-multi-carousel-list {
+  padding: 0rem 0 2rem 0;
+}
+
+.custom-dot-list-style button {
+  border: none;
+  background: rgb(255, 68, 68);
+}
+
+.react-multi-carousel-dot.react-multi-carousel-dot--active button {
+  background: rgb(255, 68, 68) !important;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out forwards;
+  /* Adjust duration and timing as needed */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+    /* Slide down from off-screen */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    /* Move to its final position */
+  }
+}
