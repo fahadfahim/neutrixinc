@@ -1,8 +1,18 @@
-import Hero from "@/components/hero";
-import OurFeature from "@/components/ourFeature";
-import OurOffer from "@/components/ourOffer";
-import ReportClaim from "@/components/reportClaim";
+
 import Layout from "@/components/shared/layout";
+import dynamic from "next/dynamic";
+const Hero = dynamic(
+  () => import("@/components/hero")
+)
+const OurFeature = dynamic(
+  () => import("@/components/ourFeature")
+)
+const OurOffer = dynamic(
+  () => import("@/components/ourOffer")
+)
+const ReportClaim = dynamic(
+  () => import("@/components/reportClaim")
+)
 
 export default function Home() {
   return (

@@ -1,9 +1,19 @@
-import AboutUs from '@/components/aboutUs'
-import OurHistory from '@/components/ourHistory'
-import OurMission from '@/components/ourMission'
-import OurOffer from '@/components/ourOffer'
+
 import Layout from '@/components/shared/layout'
 import React from 'react'
+import dynamic from "next/dynamic";
+const AboutUs = dynamic(
+    () => import("@/components/aboutUs")
+)
+const OurHistory = dynamic(
+    () => import("@/components/ourHistory")
+)
+const OurMission = dynamic(
+    () => import("@/components/ourMission")
+)
+const OurOffer = dynamic(
+    () => import("@/components/ourOffer")
+)
 
 const Page = () => {
     return (
